@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sell</title>
+  <link rel="stylesheet" type="text/css" href="sell.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheet.css">
+  <link rel="stylesheet" type="text/css" href="checkout.css">
+</head>
+<body>
+  <a href="about.html"><img src="../logo.jpg" style="width: 100px; height: 100px; float: left; margin: 10px; "></a>
+
+  <!-- top right menu -->
+  <header>
+  <nav class="menu">
+  <ul>
+    <li><a href="../index.html"><button>Home</button></a></li>
+    <li><a href="../phones.html"><button>Shop</button></a></li>
+    <li><a href="sell.html"><button>Sell </button></a></li>
+    <li><a href="../about.html"><button>About</button></a></li>
+    <li><a href="../contact.html"><button>Contact Us</button></a></li>
+  </ul>
+</nav>
+</header>
+
+<div align="center">
+  <h1 style="font-size: 80px; margin: 10px;padding: 20px;">Hello Apple</h1>
+</div><br><br>
+
+<div align="center">
+  <h1 style="font-size: 50px; margin: 10px;padding: 20px;">Fill Your Details</h1>
+</div>
+<form action="../phones.html" onsubmit="myFunction()">
+<div class="row" style="margin: 50px;">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+
+        <div class="row"style="width: 99%;">
+          <div class="col-50">
+            <h3>Address</h3>
+            <label for="fname"><i class="fa fa-user" ></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Hritik Chaudhary">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="hritik@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="D14-B, Mayapuri">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Delhi">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="Delhi">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="11001">
+              </div>
+            </div>
+          
+
+          
+
+        </div>
+
+        </div><br><br><input type="submit" style="background-color: black;" value="Confirm Order" class="btn">
+      </form>
+    </div>
+  </div>
+  </form>
+
+
+</div>
+
+        <script>
+        function myFunction() {
+          alert("Order Confirmed");
+        }
+      </script>
+
+</body>
+</html>
