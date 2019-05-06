@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+		<link rel="stylesheet" type="text/css" href="contact.css">
+
+	</head>
+	<body>
+					<!-- logo -->
+		<a href="about.html"><img src="logo.jpg" style="width: 100px; height: 100px; float: left; margin: 10px; "></a>
+
+					<!-- menu -->
+		<header>
+			<nav class="menu">
+  				<ul>
+    				<li><a href="index.html"><button class="menu_button">Home</button></a></li>
+    				<li><a href="phones.html"><button class="menu_button">Shop</button></a></li>
+    				<li><a href="sell/sell.html"><button class="menu_button">Sell</button></a></li>
+    				<li><a href="about.html"><button class="menu_button">About</button></a></li>
+    				<li><a href="contact.html"><button class="menu_button">Contact Us</button></a></li>
+  				</ul>
+		</nav>
+		</header>
+
+		<!-- hello apple -->
+		<div align="center">
+			<h1 style="font-size: 80px; margin: 10px;padding: 20px;">
+				Hello Apple
+			</h1>
+		</div>
+		<br><br>
+		<!-- support -->
+
+		<h1 style="margin: 20px; font-size: 40px; margin-left: 60px;">Support</h1><br>
+		<div class="support">
+			<span  class="box1" align="center" style="margin-left: 40px;">
+				<a href="#id01" style="text-decoration: none; color: black;">
+					<button style="border-style: none; background-color: transparent;" onclick="document.getElementById('id01').style.display='block'"><img src="help.png" style="width: 50px; height: 50px; border-radius: 50px; padding: 10px;">
+						<p>Help</p>
+					</button>
+				</a>
+			</span>
+			<span  class="box1" align="center">
+				<a href="mailto:hritikshiwach7@gmail.com" style="text-decoration: none; color: black;">
+					<img src="mail.png" style="width: 50px; height: 50px; border-radius: 50px; padding: 10px;">
+					<p>Mail us</p>
+				</a>
+			</span>
+		</div>
+
+					<!-- social -->
+
+		<h1 style="margin: 20px; font-size: 40px; margin-left: 60px;">Social Media</h1>
+		<span  class="box2" align="center" style="margin-left: 80px;">
+			<a href="https://www.facebook.com/profile.php?id=100007955675318" style="text-decoration: none; color: black;">
+				<img src="facebook.png" style="width: 50px; height: 50px; border-radius: 50px; padding: 10px;">
+				<p>Facebook</p>
+			</a>
+		</span>
+		<span  class="box2" align="center" >
+			<a href="https://www.instagram.com/hritik_chaudhry/" style="text-decoration: none; color: black;">
+				<img src="instagram.png" style="width: 50px; height: 50px; border-radius: 50px; padding: 10px;">
+				<p>Instagram</p>
+			</a>
+		</span>
+		<span  class="box2" align="center" >
+			<a href="https://twitter.com/hritikshiwach7" style="text-decoration: none; color: black;">
+				<img src="twitter.png" style="width: 50px; height: 50px; border-radius: 25px; padding: 10px;">
+				<p>Twitter</p>
+			</a>
+		</span>
+		<br><br><br><br><br><br><br><br><br><br><br><div align="center"> <img src="logo.jpg"style="width: 100px; height: 100px; margin-bottom: 60px;"></div>
+
+
+
+
+
+	<!-- Tpop up modal -->
+		<div id="id01" class="modal">
+  			<span onclick="document.getElementById('id01').style.display='none'" 
+			class="close" title="Close Modal">&times;</span>
+
+  			<!-- modal Content -->
+  			<form class="modal-content animate" action="contact.html" onsubmit="myFunction()">
+    			<div style="margin: 10px;" align="center" >
+      				<img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="width: 150px; height: 150px;">
+    			</div>
+
+    			<div align="center" style="margin: 20px;">
+      				<label for="name" ><b>Name</b></label>
+      				<input style="width: 50%; height: 35px; " type="name" placeholder="Enter Name" name="name" required>
+      			</div>
+
+      			<div align="center" style="margin: 20px;"><label for="email"><b>Email</b></label>
+      				<input type="email" style="width: 51%; height: 35px; " placeholder="Enter Email" name="email" required>
+      			</div>
+
+            	<div align="center" style="margin: 20px;">
+      				<textarea name="Message" rows="5" cols="60" placeholder="Write Your Message Here..." ></textarea>
+      				<div align="center" style="margin: 20px;" ><input type="Submit" value="Submit" style="width: 150px; height: 50px; background-color: transparent;
+      				border: 1px solid; font-size: 20px;">
+      				</div>
+      			</div>
+
+  			</form>
+
+  			<script>
+				function myFunction() {
+  				alert("Thanks for letting us know, help is on the way");
+				}
+			</script>
+		</div>
+
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('id01');
+
+			// when the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+    		if (event.target == modal) {
+       	 	modal.style.display = "none";
+    			}
+			}
+		</script>
+
+	</body>
+</html>
